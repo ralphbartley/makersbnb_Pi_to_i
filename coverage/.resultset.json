@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/david/Projects/Week5/MakersBnB/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
         "lines": [
           1,
           1,
@@ -11,10 +11,37 @@
           1,
           1,
           null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
-      "/Users/david/Projects/Week5/MakersBnB/makersbnb_Pi_to_i/spec/features/sign_up_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/list_space_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/sign_in_spec.rb": {
         "lines": [
           1,
           null,
@@ -31,17 +58,34 @@
           null
         ]
       },
-      "/Users/david/Projects/Week5/MakersBnB/makersbnb_Pi_to_i/spec/spaces_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/sign_up_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/spaces_spec.rb": {
         "lines": [
 
         ]
       },
-      "/Users/david/Projects/Week5/MakersBnB/makersbnb_Pi_to_i/spec/user_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/user_spec.rb": {
         "lines": [
 
         ]
       }
     },
-    "timestamp": 1617112187
+    "timestamp": 1617116629
   }
 }
