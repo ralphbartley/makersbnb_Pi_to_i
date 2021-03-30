@@ -52,3 +52,5 @@ I would like to receive requests until booking dates are approved
 
 ```
 
+![Chitter Domain Model (1)](https://user-images.githubusercontent.com/74908625/112954819-ace6cb00-9136-11eb-8e11-3a545e7a9d5e.jpg)
+
