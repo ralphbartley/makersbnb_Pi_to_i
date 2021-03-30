@@ -10,6 +10,11 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 Capybara.app = Makersbnb
 
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::Console,
+])
+SimpleCov.start
+
 RSpec.configure do |config|
 
   config.expect_with :rspec do |expectations|
