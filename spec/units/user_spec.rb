@@ -15,9 +15,7 @@ end
   it 'can load user data from the database' do
     con = PG.connect(dbname: ENV['TEST_NAME'])
     con.exec("INSERT INTO users (username, password) VALUES('Max', 'test');")
-    expect(Users.user('Max')).to include("username" => "Max")
+    new_user = Users.user('Max').username
+    expect(new_user).to include("Max")
   end
-
-
-
 end

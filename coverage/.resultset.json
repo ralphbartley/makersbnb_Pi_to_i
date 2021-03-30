@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
         "lines": [
           1,
           1,
@@ -14,12 +14,12 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/units/spaces_spec.rb": {
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/units/spaces_spec.rb": {
         "lines": [
 
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/units/user_spec.rb": {
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/units/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -39,16 +39,20 @@
           1,
           1,
           1,
-          null,
-          null,
-          null,
+          1,
           null,
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/lib/users.rb": {
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/lib/users.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -60,6 +64,15 @@
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -75,6 +88,6 @@
         ]
       }
     },
-    "timestamp": 1617117030
+    "timestamp": 1617118802
   }
 }
