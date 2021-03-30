@@ -1,5 +1,6 @@
 ENV['ENVIRONMENT'] = 'test'
 ENV['TEST_NAME'] = 'makersbnb_test'
+ENV['PROD_NAME'] = 'makersbnb'
 
 require 'capybara'
 require 'capybara/rspec'
