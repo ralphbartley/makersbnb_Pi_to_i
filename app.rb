@@ -6,5 +6,16 @@ class Makersbnb < Sinatra::Base
       "Testing Infrastructure"
   end
 
+  get '/sign_up' do
+    erb(:sign_up)
+  end
+
+  post '/sign_up' do
+    redirect '/welcome'
+  end
+
+  get '/welcome' do
+    erb(:welcome)
+  end
 
 end
