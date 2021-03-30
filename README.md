@@ -1,3 +1,21 @@
+# Welcome to the Pi.to_i Makers Bnb!
+
+1. ``` $ bundle install ```
+2. Install PostgreSQL (instructions for linux vary, this is for mac)
+  ```
+  brew install postgresql
+  ```
+ - if installing PostgreSQL for the first time then you'll need to follow the directions to set your user up when psql prompts you to.
+ - enter interactive terminal
+ ```
+ $ psql postgres ## postgres is automatically provided as a database to connect to
+ # \i ./db/migrations/production.sql
+ # \i ./db/migrations/test.sql
+ # \l ## list databases so you can see that a production and test server have been created
+ ```
+
+
+
 ## Headline specifications
 
 - Any signed-up user can list a new space.
@@ -53,4 +71,3 @@ I would like to receive requests until booking dates are approved
 ```
 
 ![Chitter Domain Model (1)](https://user-images.githubusercontent.com/74908625/112954819-ace6cb00-9136-11eb-8e11-3a545e7a9d5e.jpg)
-
