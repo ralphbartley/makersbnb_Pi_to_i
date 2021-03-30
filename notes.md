@@ -47,3 +47,20 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 - notetaker & readme - Ralph
 - researcher - Will
 - Trello - Max
+
+### Morning
+
+* 10 AM standup: discussed where we left off yesterday and decided we agreed enough on the domain modelling that we should move on to setting up the project files and getting to grips with using Git for the project.
+* David and Ralph to create the database migrations setup and add it to the repo setup that Will and Max create, meet back up at 11am.
+* Discussion at 11 focused on how we are to practically use Git for branches, how merging works, and set expectations for interactions with the repo.  We also finalized our understanding of what the MVP is looking to do.  Eóin popped in at 11.40 and helped with our understanding of Git, which is distilled below.
+  1. The user stories in README.md will be executed in the simplest way possible while still adhering to a MVC concept using Ruby, Sinatra, and PostgreSQL.  Ruby models of Users, Spaces, and Bookings, SQL tables of users, spaces, bookings, dates_available, and Sinatra views/routes to be elicited as user stories are implemented.
+  2. Git concepts we are going to use are branch, checkout and merge.  Possible look at using rebase.
+    - The notetaker can push edits to README and notes without creating a new branch.  
+    - A branch should be created for the feature being worked on.
+    - The following pattern is roughly established
+    ```
+    $ git branch feature_name
+    $ git checkout feature_name
+    $ git add .
+    $ git commit -m ""
+    ```
