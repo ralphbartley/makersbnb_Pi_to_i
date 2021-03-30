@@ -1,0 +1,30 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/spaces_spec.rb": {
+        "lines": [
+
+        ]
+      },
+      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/spec/user_spec.rb": {
+        "lines": [
+
+        ]
+      }
+    },
+    "timestamp": 1617109803
+  }
+}
