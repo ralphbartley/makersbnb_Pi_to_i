@@ -30,7 +30,7 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 
 ## Day 2 Plan
 
-- 10am -
+- 10am
 - One pair setup up Postgres and copy into SQL doc
 - The other pair setting gem files and rspec etc.
 - Aim to have done this by lunch-time and set up for the afternoon.
@@ -38,3 +38,12 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 - Assign roles. Break up into pairs
 - Domain models done, flow charts completed
 - Ready to start on user stories tomorrow
+
+- Ensure two teams aren't overlapping with coding. i.e. Gemfiles etc
+
+## Roles
+
+- leader - David
+- notetaker & readme - Ralph
+- researcher - Will
+- Trello - Max
