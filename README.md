@@ -50,7 +50,6 @@ As a user
 So that I don't miss out on any bookings
 I would like to receive requests until booking dates are approved
 
-![Chitter Domain Model](https://user-images.githubusercontent.com/74908625/112954510-5b3e4080-9136-11eb-94c6-a9d18f8043b0.jpg)
-
-
 ```
+
+![Chitter Domain Model](https://user-images.githubusercontent.com/74908625/112954510-5b3e4080-9136-11eb-94c6-a9d18f8043b0.jpg)
