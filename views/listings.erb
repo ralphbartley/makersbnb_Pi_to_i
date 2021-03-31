@@ -11,12 +11,14 @@
     <th>Price</th>
     <th>Button</th>
   </tr>
+	<% @spaces.each do |space| %>
   <tr>
-    <td><%= @name %></td>
-    <td><%= @description %></td>
-    <td><%= @daily_price %></td>
-    <td><form action="/listings/1"><input type="submit" value="View" /></form>
+    <td><%= space.name %></td>
+    <td><%= space.description %></td>
+    <td><%= space.daily_price %></td>
+    <td><form action="/listings/<%= space.id %>"><input type="submit" value="View" /></form>
   </tr>
+	<% end %>
 
 <form action="/welcome">
 	<input type="submit" value="Back" />

@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/users.rb'
 require 'pg'
+require './lib/spaces.rb'
 ENV['PROD_NAME'] = 'makersbnb'
 
 class Makersbnb < Sinatra::Base
@@ -41,9 +42,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/listings' do
-    @name = session[:name]
-    @description = session[:description]
-    @daily_price = session[:daily_price]
+    @spaces = Spaces.all
     erb(:listings)
   end
 
@@ -52,16 +51,16 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/listings/new' do
-    session[:name] = params[:name]
-    session[:description] = params[:description]
-    session[:daily_price] = params[:daily_price]
+    user = Users.user(session[:username]).id
+    Spaces.add(params[:name], params[:description], params[:daily_price], user)
     redirect '/listings'
   end
 
-  get '/listings/1' do
-    @name = session[:name]
-    @description = session[:description]
-    @daily_price = session[:daily_price]
+  get '/listings/:id' do
+    @spaces = Spaces.all
+    @spaces.each do |space|
+      @new_space = space if space.id == params[:id]
+    end
     erb(:space)
   end
 end
