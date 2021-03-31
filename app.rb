@@ -31,6 +31,9 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/listings' do
+    @name = session[:name]
+    @description = session[:description]
+    @daily_price = session[:daily_price]
     erb(:listings)
   end
 
@@ -39,6 +42,9 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/listings/new' do
+    session[:name] = params[:name]
+    session[:description] = params[:description]
+    session[:daily_price] = params[:daily_price]
     redirect '/listings'
   end
 end

@@ -10,5 +10,7 @@ feature 'Listing Space' do
 
     expect(current_path).to eq('/listings')
     expect(page).to have_content('Test_space')
+    expect(page).to have_content('Lovely area with a garden and a little path running down the middle.')
+    expect(page).to have_content('100')
   end
 end

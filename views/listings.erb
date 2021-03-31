@@ -1,1 +1,21 @@
-Test_space
+<h2>Listings</h2>
+
+<form action="/listings/new">
+	<input type="submit" value="New Listing" />
+</form>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td><%= @name %></td>
+    <td><%= @description %></td>
+    <td><%= @daily_price %></td>
+  </tr>
+
+<form action="/welcome">
+	<input type="submit" value="Back" />
+</form>

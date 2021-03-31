@@ -37,6 +37,8 @@
           null,
           1,
           1,
+          1,
+          1,
           null,
           null
         ]
@@ -75,11 +77,12 @@
           null
         ]
       },
-
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/units/spaces_spec.rb": {
+        "lines": [
 
         ]
       },
-
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/units/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -104,7 +107,7 @@
           null
         ]
       },
-      "/Users/maxstrivens/Documents/Programming/Projects/Ruby/makers_learning/week_5/airbnb/makersbnb_Pi_to_i/lib/users.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/lib/users.rb": {
         "lines": [
           1,
           1,
@@ -124,9 +127,7 @@
           1,
           1,
           1,
-          null,
           1,
-          null,
           null,
           null,
           null,
@@ -148,6 +149,6 @@
         ]
       }
     },
-
+    "timestamp": 1617184725
   }
 }
