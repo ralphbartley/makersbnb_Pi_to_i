@@ -16,7 +16,7 @@ class Users
   def self.user(username)
     con = setup_connection
     result = con.exec("SELECT * FROM users WHERE username='#{username}'; ").first
-    p  Users.new(result['id'], result['username'], result['password'])
+    Users.new(result['id'], result['username'], result['password'])
   end
 
 # Test failing due to not being able to test enumerator object.
