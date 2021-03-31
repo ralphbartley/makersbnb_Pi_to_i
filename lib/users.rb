@@ -19,19 +19,12 @@ class Users
     Users.new(result['id'], result['username'], result['password'])
   end
 
-# Test failing due to not being able to test enumerator object.
-# It might be a solution to use .first at the end of linie 18
-# Equally the test might need to be rewritten in order to pass
-# Tried calling .username attribute to return the username but it didn't like the method
-
-
-
 private
   def self.setup_connection
-    if ENV['ENVIRONMENT'] == "test"
-      PG.connect(dbname: ENV['TEST_NAME'])
-    else
-      PG.connect(dbname: ENV['PROD_NAME'])
-    end
+  if ENV['ENVIRONMENT'] == "test"
+      p PG.connect(dbname: ENV['TEST_NAME'])
+  else
+      p PG.connect(dbname: ENV['PROD_NAME'])
+  end
   end
 end

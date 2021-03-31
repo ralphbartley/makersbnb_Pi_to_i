@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/users.rb'
 require 'pg'
+ENV['PROD_NAME'] = 'makersbnb'
 
 class Makersbnb < Sinatra::Base
   enable :sessions
@@ -15,6 +16,7 @@ class Makersbnb < Sinatra::Base
 
   post '/sign_up' do
     Users.sign_up(params[:username], params[:password])
+    session[:username] = params[:username]
     redirect '/welcome'
   end
 
@@ -35,7 +37,7 @@ class Makersbnb < Sinatra::Base
 
   get '/welcome' do
     # @username = session[:username]
-    @username = Users.user.username
+    @username = Users.user(session[:username]).username
     erb(:welcome)
   end
 
