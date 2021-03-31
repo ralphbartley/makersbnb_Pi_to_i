@@ -69,3 +69,40 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 
 * Front end/Back end split worked out really well, resulted in a clean merge (except for forgetting to add coverage logs to .gitignore)
 * Caught up some but decided to leave further conversation to next morning's standup
+
+## Day 2 Plan
+
+- 10am
+- Continue to work split front end and back end but changing pairings.
+- Discussed how we want to go about binding front end and backend.
+- Spoke about 
+
+## Roles
+
+- leader - Ralph
+- notetaker & readme - Will
+- researcher - David
+- Trello - Max
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
