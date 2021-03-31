@@ -12,7 +12,8 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/sign_up' do
-    session[:username] = params[:username]
+    # session[:username] = params[:username]
+    Users.sign_up(params[:username], params[:password])
     redirect '/welcome'
   end
 
@@ -22,11 +23,18 @@ class Makersbnb < Sinatra::Base
 
   post '/sign_in' do
     session[:username] = params[:username]
+    # Users.user(params[:username])
+    # if Users.new.password == params[:password]
+    #   redirect '/welcome'
+    # else
+    #   redirect './sign_in'
+    # end
     redirect '/welcome'
   end
 
   get '/welcome' do
-    @username = session[:username]
+    # @username = session[:username]
+    @username = Users.user.username
     erb(:welcome)
   end
 
