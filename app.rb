@@ -55,4 +55,11 @@ class Makersbnb < Sinatra::Base
     session[:daily_price] = params[:daily_price]
     redirect '/listings'
   end
+
+  get '/listings/1' do
+    @name = session[:name]
+    @description = session[:description]
+    @daily_price = session[:daily_price]
+    erb(:space)
+  end
 end

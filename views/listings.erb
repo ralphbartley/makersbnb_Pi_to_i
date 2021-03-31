@@ -9,11 +9,13 @@
     <th>Name</th>
     <th>Description</th>
     <th>Price</th>
+    <th>Button</th>
   </tr>
   <tr>
     <td><%= @name %></td>
     <td><%= @description %></td>
     <td><%= @daily_price %></td>
+    <td><form action="/listings/1"><input type="submit" value="View" /></form>
   </tr>
 
 <form action="/welcome">
