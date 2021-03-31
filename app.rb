@@ -1,4 +1,6 @@
 require 'sinatra/base'
+require './lib/users.rb'
+require 'pg'
 
 class Makersbnb < Sinatra::Base
   enable :sessions
@@ -12,7 +14,6 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/sign_up' do
-    # session[:username] = params[:username]
     Users.sign_up(params[:username], params[:password])
     redirect '/welcome'
   end
