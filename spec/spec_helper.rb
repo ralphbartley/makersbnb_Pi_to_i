@@ -7,6 +7,7 @@ require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
 require 'setup_test_database'
+require 'web_helper.rb'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
@@ -30,6 +31,7 @@ RSpec.configure do |config|
 
   config.before(:each) do
     setup_test_database
+    con = PG.connect(dbname: ENV['TEST_NAME'])
+    con.exec("INSERT INTO users VALUES('1', 'Test', 'password')")
   end
-
 end

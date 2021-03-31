@@ -5,10 +5,10 @@ describe Users do
 describe "#sign_up" do
   it 'takes a name and password as argument and adds to database' do
     con = PG.connect(dbname: ENV['TEST_NAME'])
-    Users.sign_up("Max", "test")
+    Users.sign_up("Test", "password")
     result = con.exec("Select * FROM users")
     name = result.map { |row| row['username']  }
-    expect(name.first).to eq("Max")
+    expect(name.first).to eq("Test")
   end
 end
 
