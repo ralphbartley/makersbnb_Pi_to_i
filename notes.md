@@ -64,3 +64,8 @@ https://miro.com/app/board/o9J_lOB0CxE=/
     $ git add .
     $ git commit -m ""
     ```
+ * Decided to split Front-end (Sinatra views and controller) and Back-end (Ruby model + database) to provide clear split in responsibilities and not editing shared files.
+### Afternoon
+
+* Front end/Back end split worked out really well, resulted in a clean merge (except for forgetting to add coverage logs to .gitignore)
+* Caught up some but decided to leave further conversation to next morning's standup
