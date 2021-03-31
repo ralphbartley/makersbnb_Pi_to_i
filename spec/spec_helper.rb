@@ -1,10 +1,13 @@
 ENV['ENVIRONMENT'] = 'test'
+ENV['TEST_NAME'] = 'makersbnb_test'
+ENV['PROD_NAME'] = 'makersbnb'
 
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
+require 'setup_test_database'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
@@ -25,4 +28,9 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
+
+  config.before(:each) do
+    setup_test_database
+  end
+
 end
