@@ -9,7 +9,7 @@
     <th>Name</th>
     <th>Description</th>
     <th>Price</th>
-    <th>Button</th>
+    <th>Options</th>
   </tr>
 	<% @user_spaces.each do |space| %>
   <tr>
@@ -20,6 +20,6 @@
   </tr>
 	<% end %>
 
-<form action="/welcome">
+<form action="/welcome" id="back_button">
 	<input type="submit" value="Back" />
 </form>
