@@ -69,14 +69,14 @@ class Makersbnb < Sinatra::Base
     end
     # @dates = Bookings.available_dates
     @dates = [1,2,3,4]
-    session[:current_space] = @new_space.id
+    session[:current_space_id] = @new_space.id
     erb(:space)
   end
 
   post '/bookings/request' do
     @bookings = []
-    params.each do |date|
-      @bookings << Bookings.new(nil, session[:current_space], date)
+    params.each do |key, date|
+      @bookings << Bookings.new(nil, session[:current_space_id], date)
     end
     Bookings.request_booking(@bookings)
     redirect '/welcome'
