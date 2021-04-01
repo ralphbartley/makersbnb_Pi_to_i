@@ -21,10 +21,10 @@ class Users
 
 private
   def self.setup_connection
-  if ENV['ENVIRONMENT'] == "test"
-      PG.connect(dbname: ENV['TEST_NAME'])
-  else
-      PG.connect(dbname: ENV['PROD_NAME'])
-  end
+    if ENV['ENVIRONMENT'] == "test"
+        PG.connect(dbname: ENV['TEST_NAME'])
+    else
+        PG.connect(dbname: ENV['PROD_NAME'])
+    end
   end
 end

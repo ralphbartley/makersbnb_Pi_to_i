@@ -19,8 +19,8 @@ attr_reader :id, :name, :description, :daily_price, :owner_id
   def self.all
     con = setup_connection
     result = con.exec("SELECT * FROM spaces;")
-    result.map do |result|
-      Spaces.new(result['id'], result['name'], result['description'], result['daily_price'], result['owner_id'])
+    result.map do |row|
+      Spaces.new(row['id'], row['name'], row['description'], row['daily_price'], row['owner_id'])
     end
   end
 

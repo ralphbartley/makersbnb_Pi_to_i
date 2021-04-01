@@ -21,13 +21,20 @@ CREATE TABLE spaces
 CREATE TABLE bookings
 (
   id SERIAL PRIMARY KEY,
-  space_id INTEGER REFERENCES
-  spaces (id), date VARCHAR(60)
+  space_id INTEGER REFERENCES spaces (id),
+  date VARCHAR(60)
 );
 
 CREATE TABLE dates_available
 (
   id SERIAL PRIMARY KEY,
-  space_id INTEGER REFERENCES
-  spaces(id), date VARCHAR(60)
+  space_id INTEGER REFERENCES spaces(id),
+  date VARCHAR(60)
+);
+
+CREATE TABLE requests
+(
+  id SERIAL PRIMARY KEY,
+  space_id INTEGER REFERENCES spaces(id),
+  date VARCHAR(60)
 );

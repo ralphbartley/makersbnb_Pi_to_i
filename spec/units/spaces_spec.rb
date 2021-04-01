@@ -10,6 +10,7 @@ describe Spaces do
       owner_id = Users.user("Max").id
       Spaces.add("name", "description", 40, owner_id)
       result = con.exec("SELECT * FROM spaces WHERE name='name';")
+      con.close
       space = result.first
       expect(space).to include({ "name" => "name", "description" => "description", "daily_price" => "40" })
     end
@@ -17,7 +18,6 @@ describe Spaces do
 
   describe '.all' do
     it 'lists all spaces and wraps name, description price, owner_id in objects' do
-      con = PG.connect(dbname: ENV['TEST_NAME'])
       Users.sign_up("Max", "test")
       owner_id = Users.user("Max").id
       Spaces.add("name", "description", 40, owner_id)
