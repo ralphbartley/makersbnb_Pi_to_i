@@ -14,11 +14,13 @@ attr_reader :id, :name, :description, :daily_price, :owner_id
   def self.add(name, description, daily_price, owner_id)
     con = setup_connection
     con.exec("INSERT INTO spaces (name, description, daily_price, owner_id) VALUES('#{name}', '#{description}', '#{daily_price}', '#{owner_id}');")
+    con.close
   end
 
   def self.all
     con = setup_connection
     result = con.exec("SELECT * FROM spaces;")
+    con.close
     result.map do |row|
       Spaces.new(row['id'], row['name'], row['description'], row['daily_price'], row['owner_id'])
     end

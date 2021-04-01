@@ -52,11 +52,13 @@ class Bookings
   def self.remove_date_available(space_id, date)
     con = setup_connection
     con.exec("DELETE FROM dates_available WHERE space_id='#{space_id}' AND date='#{date}';")
+    con.close
   end
 
   def self.remove_request(space_id, date)
     con = setup_connection
     con.exec("DELETE FROM requests WHERE space_id='#{space_id}' AND date='#{date}';")
+    con.close
   end
 
   def self.request_booking(bookings)
@@ -66,6 +68,7 @@ class Bookings
       date = booking.date
       con.exec("INSERT INTO requests (space_id, date) VALUES('#{space_id}', '#{date}');")
     end
+    con.close
   end
 
 private

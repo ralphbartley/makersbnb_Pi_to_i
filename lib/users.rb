@@ -11,11 +11,13 @@ class Users
   def self.sign_up(username, password)
     con = setup_connection
     con.exec("INSERT INTO users (username, password) VALUES('#{username}', '#{password}');")
+    con.close
   end
 
   def self.user(username)
     con = setup_connection
     result = con.exec("SELECT * FROM users WHERE username='#{username}'; ").first
+    con.close
     Users.new(result['id'], result['username'], result['password'])
   end
 
