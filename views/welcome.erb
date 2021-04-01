@@ -1,5 +1,21 @@
 <h2>Welcome <%= @username %></h2>
 
 <form action="/listings">
-	<input type="submit" value="View Listings" />
+	<input type="submit" value="View My Listings" />
 </form>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Button</th>
+  </tr>
+	<% @spaces.each do |space| %>
+  <tr>
+    <td><%= space.name %></td>
+    <td><%= space.description %></td>
+    <td><%= space.daily_price %></td>
+    <td><form action="/listings/<%= space.id %>"><input type="submit" value="View" /></form>
+  </tr>
+	<% end %>

@@ -1,7 +1,7 @@
 <h2>Listings</h2>
 
 <form action="/listings/new">
-	<input type="submit" value="New Listing" />
+	<input type="submit" value="Add New Listing" />
 </form>
 
 <table>
@@ -11,7 +11,7 @@
     <th>Price</th>
     <th>Button</th>
   </tr>
-	<% @spaces.each do |space| %>
+	<% @user_spaces.each do |space| %>
   <tr>
     <td><%= space.name %></td>
     <td><%= space.description %></td>

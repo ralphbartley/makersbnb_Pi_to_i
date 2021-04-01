@@ -36,13 +36,18 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/welcome' do
-    # @username = session[:username]
     @username = Users.user(session[:username]).username
+    @spaces = Spaces.all
     erb(:welcome)
   end
 
   get '/listings' do
-    @spaces = Spaces.all
+    @user_spaces = []
+    Spaces.all.each do |space|
+      if space.owner_id == Users.user(session[:username]).id
+        @user_spaces << space
+      end
+    end
     erb(:listings)
   end
 

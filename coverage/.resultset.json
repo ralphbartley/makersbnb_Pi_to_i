@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/features_spec.rb": {
         "lines": [
           1,
           1,
@@ -23,7 +23,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/list_space_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/list_space_spec.rb": {
         "lines": [
           1,
           null,
@@ -40,7 +40,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/listings_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/listings_spec.rb": {
         "lines": [
           1,
           null,
@@ -58,7 +58,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/sign_in_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/sign_in_spec.rb": {
         "lines": [
           1,
           1,
@@ -72,7 +72,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/features/sign_up_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/features/sign_up_spec.rb": {
         "lines": [
           1,
           null,
@@ -89,7 +89,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/units/bookings_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/units/bookings_spec.rb": {
         "lines": [
           1,
           null,
@@ -283,7 +283,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/lib/bookings.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/lib/bookings.rb": {
         "lines": [
           1,
           null,
@@ -366,7 +366,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/units/spaces_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/units/spaces_spec.rb": {
         "lines": [
           1,
           null,
@@ -406,7 +406,7 @@
           null
         ]
       },
-      "/Users/ralphbartley/Projects/makersbnb_Pi_to_i/spec/units/user_spec.rb": {
+      "/Users/willspencer/Desktop/Projects/makersbnb_Pi_to_i/spec/units/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -436,6 +436,6 @@
         ]
       }
     },
-    "timestamp": 1617245084
+    "timestamp": 1617272398
   }
 }
