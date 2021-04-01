@@ -11,6 +11,7 @@
  $ psql postgres ## postgres is automatically provided as a database to connect to
  # \i ./db/migrations/production.sql
  # \i ./db/migrations/test.sql
+ # \i ./db/migrations/setup.sql
  # \l ## list databases so you can see that a production and test server have been created
  ```
 
