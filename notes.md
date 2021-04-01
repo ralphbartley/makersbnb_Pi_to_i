@@ -75,7 +75,7 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 - 10am
 - Continue to work split front end and back end but changing pairings.
 - Discussed how we want to go about binding front end and backend.
-- Spoke about 
+- Spoke about our MVP and if we felt it was still accurate.
 
 ## Roles
 
@@ -83,6 +83,16 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 - notetaker & readme - Will
 - researcher - David
 - Trello - Max
+
+### Morning
+
+* Backend created spaces class data base and worked on object wrapping
+* Frontend work on navigation buttons and listing space view file.
+
+
+### Afternoon
+
+* Come back together as a 4 and worked through bugs to ensure frontend and backend work together.
 
 
 
