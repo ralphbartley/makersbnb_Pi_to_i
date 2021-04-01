@@ -7,3 +7,13 @@
 <form action="/listings">
 	<input type="submit" value="Back" />
 </form>
+
+<form action="/bookings/request" method="post">
+<% @dates.each do |date|%>
+<tr>
+	<td><%= date %></td>
+	<td><input type="radio" value="<%= date %>" />
+</tr>
+<% end %>
+<input type="submit" value="Request booking" />
+</form>

@@ -2,6 +2,7 @@ require 'sinatra/base'
 require './lib/users.rb'
 require 'pg'
 require './lib/spaces.rb'
+require './lib/bookings.rb'
 ENV['PROD_NAME'] = 'makersbnb'
 
 class Makersbnb < Sinatra::Base
@@ -66,6 +67,18 @@ class Makersbnb < Sinatra::Base
     @spaces.each do |space|
       @new_space = space if space.id == params[:id]
     end
+    # @dates = Bookings.available_dates
+    @dates = [1,2,3,4]
+    session[:current_space] = @new_space.id
     erb(:space)
+  end
+
+  post '/bookings/request' do
+    @bookings = []
+    params.each do |date|
+      @bookings << Bookings.new(nil, session[:current_space], date)
+    end
+    Bookings.request_booking(@bookings)
+    redirect '/welcome'
   end
 end
