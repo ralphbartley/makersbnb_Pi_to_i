@@ -31,10 +31,12 @@ class Bookings
     end
   end
 
-  def self.available_dates(bookings)
+  def self.available_dates(space_id)
+    con = setup_connection
+    result = con.exec("SELECT * FROM dates_available WHERE space_id='#{space_id}';")
     @dates = []
-    bookings.each do |booking|
-      @dates << booking.date
+    result.each do |row|
+      @dates << row["date"]
     end
     @dates
   end

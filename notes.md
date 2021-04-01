@@ -70,7 +70,7 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 * Front end/Back end split worked out really well, resulted in a clean merge (except for forgetting to add coverage logs to .gitignore)
 * Caught up some but decided to leave further conversation to next morning's standup
 
-## Day 2 Plan
+## Day 3 Plan
 
 - 10am
 - Continue to work split front end and back end but changing pairings.
@@ -94,25 +94,22 @@ https://miro.com/app/board/o9J_lOB0CxE=/
 
 * Come back together as a 4 and worked through bugs to ensure frontend and backend work together.
 
+## Day 3 Plan
 
+- 10am
 
+## Roles
 
+- notetaker & readme - David
 
+### Morning
 
+* Backend: Making space id link to space listing in the spaces.erb view so the user can
+choose to list all available spaces to rent or can list their own spaces to rent.
+* Frontend: Will & Max worked on the css and view pages styling and formatting.
 
+### Afternoon
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Regrouped at 2pm to set up test data for users, spaces and dates available. And complete
+the backend processing for selecting and viewing dates available for user to select on the listings
+page.

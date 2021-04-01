@@ -64,11 +64,11 @@ class Makersbnb < Sinatra::Base
 
   get '/listings/:id' do
     @spaces = Spaces.all
+    @new_space = nil
     @spaces.each do |space|
       @new_space = space if space.id == params[:id]
     end
-    @bookings = Bookings.bookings(@new_space.id)
-    @dates = Bookings.available_dates(@bookings)
+    @dates = Bookings.available_dates(@new_space.id)
     session[:current_space_id] = @new_space.id
     erb(:space)
   end
