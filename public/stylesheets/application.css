@@ -3,7 +3,25 @@ body {
   text-align: center;
 }
 
+input[type=submit] {
+  border-radius: 5px;
+  border: 1px;
+  margin: 2px;
+  padding: 3px;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+  opacity: 0.5;
+  color: white;
+}
+
 h1 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+h2 {
   color: #4CAF50;
   text-align: center;
 }
