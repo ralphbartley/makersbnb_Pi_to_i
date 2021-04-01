@@ -1,9 +1,13 @@
-<h2>Space <%= @new_space.name %> </h2>
+<h2><%= @new_space.name %></h2>
 
-<p><%= @new_space.description %></p>
+<p> <%= @new_space.description %> </p>
 
-<p><%= @new_space.daily_price %></p>
+<p> <%= @new_space.daily_price %> </p>
 
 <form action="/listings">
-	<input type="submit" value="Back" />
+	<input type="submit" value="My Listings" />
+</form>
+
+<form action="/welcome">
+	<input type="submit" value="All Listings" />
 </form>

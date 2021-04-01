@@ -8,18 +8,18 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th>Price</th>
+    <th>Daily Price</th>
     <th>Options</th>
   </tr>
 	<% @user_spaces.each do |space| %>
   <tr>
     <td><%= space.name %></td>
     <td><%= space.description %></td>
-    <td><%= space.daily_price %></td>
+    <td>£<%= space.daily_price %></td>
     <td><form action="/listings/<%= space.id %>"><input type="submit" value="View" /></form>
   </tr>
 	<% end %>
 
-<form action="/welcome" id="back_button">
-	<input type="submit" value="Back" />
+<form action="/welcome">
+	<input type="submit" value="All Listings" />
 </form>

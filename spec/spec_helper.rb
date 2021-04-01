@@ -32,6 +32,5 @@ RSpec.configure do |config|
   config.before(:each) do
     setup_test_database
     con = PG.connect(dbname: ENV['TEST_NAME'])
-    con.exec("INSERT INTO users VALUES('1', 'Test', 'password')")
   end
 end
